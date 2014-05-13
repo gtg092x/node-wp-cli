@@ -27,6 +27,7 @@
     "lodash": "^2.4.1"
   },
   "dependencies": {
+	"async": "^0.8.0",
     "lodash": "^2.4.1"
   }
 }
