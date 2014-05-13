@@ -1,0 +1,32 @@
+{
+  "name": "node-wp-cli",
+  "version": "0.0.0",
+  "description": "Node Wrapper for Wordpress CLI",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gtg092x/node-wp-cli.git"
+  },
+  "keywords": [
+    "wordpress",
+    "node"
+  ],
+  "author": "gtg092x",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gtg092x/node-wp-cli/issues"
+  },
+  "homepage": "https://github.com/gtg092x/node-wp-cli",
+  "devDependencies": {
+    "request": "^2.34.0",
+    "jsdom": "^0.10.5",
+    "async": "^0.8.0",
+    "lodash": "^2.4.1"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}

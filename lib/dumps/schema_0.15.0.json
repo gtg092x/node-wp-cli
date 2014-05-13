@@ -1,0 +1,3870 @@
+{
+    "args": [],
+    "options": {},
+    "use": "wp",
+    "cache": {
+        "args": [],
+        "options": {},
+        "use": "wp cache",
+        "add": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "value",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "expiration",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache add",
+            "endpoint": true,
+            "help": "Add a value to the object cache."
+        },
+        "decr": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "offset",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache decr",
+            "endpoint": true,
+            "help": "Decrement a value in the object cache."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache delete",
+            "endpoint": true,
+            "help": "Remove a value from the object cache."
+        },
+        "flush": {
+            "args": [],
+            "options": {},
+            "use": "wp cache flush",
+            "endpoint": true,
+            "help": "Flush the object cache."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache get",
+            "endpoint": true,
+            "help": "Get a value from the object cache."
+        },
+        "incr": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "offset",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache incr",
+            "endpoint": true,
+            "help": "Increment a value in the object cache."
+        },
+        "replace": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "value",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "expiration",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache replace",
+            "endpoint": true,
+            "help": "Replace an existing value in the object cache."
+        },
+        "set": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "value",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "group",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "expiration",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cache set",
+            "endpoint": true,
+            "help": "Set a value to the object cache."
+        },
+        "type": {
+            "args": [],
+            "options": {},
+            "use": "wp cache type",
+            "endpoint": true,
+            "help": "Attempts to determine which object cache is being used."
+        },
+        "help": "Manage the object cache."
+    },
+    "cap": {
+        "args": [],
+        "options": {},
+        "use": "wp cap",
+        "add": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "role",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "cap",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cap add",
+            "endpoint": true,
+            "help": "Add capabilities to a given role."
+        },
+        "list": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "role",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cap list",
+            "endpoint": true,
+            "help": "List capabilities for a given role."
+        },
+        "remove": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "role",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "cap",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp cap remove",
+            "endpoint": true,
+            "help": "Remove capabilities from a given role."
+        },
+        "help": "Manage user capabilities."
+    },
+    "cli": {
+        "args": [],
+        "options": {},
+        "use": "wp cli",
+        "cmd_dump": {
+            "args": [],
+            "options": {},
+            "use": "wp cli cmd-dump",
+            "endpoint": true,
+            "help": "Dump the list of installed commands, as JSON."
+        },
+        "completions": {
+            "args": [],
+            "options": {
+                "line": {
+                    "required": true,
+                    "type": "param"
+                },
+                "point": {
+                    "required": true,
+                    "type": "param"
+                }
+            },
+            "use": "wp cli completions",
+            "endpoint": true,
+            "help": "Generate tab completion strings."
+        },
+        "info": {
+            "args": [],
+            "options": {
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp cli info",
+            "endpoint": true,
+            "help": "Print various data about the CLI environment."
+        },
+        "param_dump": {
+            "args": [],
+            "options": {},
+            "use": "wp cli param-dump",
+            "endpoint": true,
+            "help": "Dump the list of global parameters, as JSON."
+        },
+        "version": {
+            "args": [],
+            "options": {},
+            "use": "wp cli version",
+            "endpoint": true,
+            "help": "Print WP-CLI version."
+        },
+        "help": "Get information about WP-CLI itself."
+    },
+    "comment": {
+        "args": [],
+        "options": {},
+        "use": "wp comment",
+        "approve": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment approve",
+            "endpoint": true,
+            "help": "Approve a comment."
+        },
+        "count": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "post-id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp comment count",
+            "endpoint": true,
+            "help": "Count comments, on whole blog or on a given post."
+        },
+        "create": {
+            "args": [],
+            "options": {
+                "field": {
+                    "required": true,
+                    "type": "param"
+                },
+                "porcelain": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp comment create",
+            "endpoint": true,
+            "help": "Insert a comment."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "force": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp comment delete",
+            "endpoint": true,
+            "help": "Delete a comment."
+        },
+        "exists": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment exists",
+            "endpoint": true,
+            "help": "Verify whether a comment exists."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp comment get",
+            "endpoint": true,
+            "help": "Get a single comment."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp comment list",
+            "endpoint": true,
+            "help": "Get a list of comments."
+        },
+        "meta": {
+            "args": [],
+            "options": {},
+            "use": "wp comment meta",
+            "add": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": false,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp comment meta add",
+                "endpoint": true,
+                "help": "Add a meta field."
+            },
+            "delete": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp comment meta delete",
+                "endpoint": true,
+                "help": "Delete a meta field."
+            },
+            "get": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp comment meta get",
+                "endpoint": true,
+                "help": "Get meta field value."
+            },
+            "update": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": false,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp comment meta update",
+                "endpoint": true,
+                "help": "Update a meta field."
+            },
+            "help": "Manage comment custom fields."
+        },
+        "spam": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment spam",
+            "endpoint": true,
+            "help": "Spam a comment."
+        },
+        "status": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment status",
+            "endpoint": true,
+            "help": "Get status of a comment."
+        },
+        "trash": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment trash",
+            "endpoint": true,
+            "help": "Trash a comment."
+        },
+        "unapprove": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment unapprove",
+            "endpoint": true,
+            "help": "Unapprove a comment."
+        },
+        "unspam": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment unspam",
+            "endpoint": true,
+            "help": "Unspam a comment."
+        },
+        "untrash": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp comment untrash",
+            "endpoint": true,
+            "help": "Untrash a comment."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": true,
+                    "type": "param"
+                }
+            },
+            "use": "wp comment update",
+            "endpoint": true,
+            "help": "Update one or more comments."
+        },
+        "url": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp comment url",
+            "endpoint": true,
+            "help": "Get comment url"
+        },
+        "help": "Manage comments."
+    },
+    "core": {
+        "args": [],
+        "options": {},
+        "use": "wp core",
+        "config": {
+            "args": [],
+            "options": {
+                "dbname": {
+                    "required": true,
+                    "type": "param"
+                },
+                "dbuser": {
+                    "required": true,
+                    "type": "param"
+                },
+                "dbpass": {
+                    "required": false,
+                    "type": "param"
+                },
+                "dbhost": {
+                    "required": false,
+                    "type": "param"
+                },
+                "dbprefix": {
+                    "required": false,
+                    "type": "param"
+                },
+                "dbcharset": {
+                    "required": false,
+                    "type": "param"
+                },
+                "dbcollate": {
+                    "required": false,
+                    "type": "param"
+                },
+                "locale": {
+                    "required": false,
+                    "type": "param"
+                },
+                "extra-php": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "skip-salts": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "skip-check": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp core config",
+            "endpoint": true,
+            "help": "Generate a wp-config.php file."
+        },
+        "download": {
+            "args": [],
+            "options": {
+                "path": {
+                    "required": false,
+                    "type": "param"
+                },
+                "locale": {
+                    "required": false,
+                    "type": "param"
+                },
+                "version": {
+                    "required": false,
+                    "type": "param"
+                },
+                "force": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp core download",
+            "endpoint": true,
+            "help": "Download core WordPress files."
+        },
+        "install": {
+            "args": [],
+            "options": {
+                "url": {
+                    "required": true,
+                    "type": "param"
+                },
+                "title": {
+                    "required": true,
+                    "type": "param"
+                },
+                "admin_user": {
+                    "required": true,
+                    "type": "param"
+                },
+                "admin_password": {
+                    "required": true,
+                    "type": "param"
+                },
+                "admin_email": {
+                    "required": true,
+                    "type": "param"
+                }
+            },
+            "use": "wp core install",
+            "endpoint": true,
+            "help": "Create the WordPress tables in the database."
+        },
+        "is_installed": {
+            "args": [],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp core is-installed",
+            "endpoint": true,
+            "help": "Determine if the WordPress tables are installed."
+        },
+        "multisite_convert": {
+            "args": [],
+            "options": {
+                "title": {
+                    "required": false,
+                    "type": "param"
+                },
+                "base": {
+                    "required": false,
+                    "type": "param"
+                },
+                "subdomains": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp core multisite-convert",
+            "endpoint": true,
+            "help": "Transform a single-site install into a multi-site install."
+        },
+        "multisite_install": {
+            "args": [],
+            "options": {
+                "url": {
+                    "required": false,
+                    "type": "param"
+                },
+                "base": {
+                    "required": false,
+                    "type": "param"
+                },
+                "subdomains": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "title": {
+                    "required": true,
+                    "type": "param"
+                },
+                "admin_user": {
+                    "required": true,
+                    "type": "param"
+                },
+                "admin_password": {
+                    "required": true,
+                    "type": "param"
+                },
+                "admin_email": {
+                    "required": true,
+                    "type": "param"
+                }
+            },
+            "use": "wp core multisite-install",
+            "endpoint": true,
+            "help": "Install multisite from scratch."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "zip",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "version": {
+                    "required": false,
+                    "type": "param"
+                },
+                "force": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "locale": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp core update",
+            "endpoint": true,
+            "help": "Update WordPress."
+        },
+        "update_db": {
+            "args": [],
+            "options": {},
+            "use": "wp core update-db",
+            "endpoint": true,
+            "help": "Update the WordPress database."
+        },
+        "version": {
+            "args": [],
+            "options": {
+                "extra": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp core version",
+            "endpoint": true,
+            "help": "Display the WordPress version."
+        },
+        "help": "Download, install, update and otherwise manage WordPress proper."
+    },
+    "db": {
+        "args": [],
+        "options": {},
+        "use": "wp db",
+        "cli": {
+            "args": [],
+            "options": {},
+            "use": "wp db cli",
+            "endpoint": true,
+            "help": "Open a mysql console using the WordPress credentials."
+        },
+        "create": {
+            "args": [],
+            "options": {},
+            "use": "wp db create",
+            "endpoint": true,
+            "help": "Create the database, as specified in wp-config.php"
+        },
+        "drop": {
+            "args": [],
+            "options": {
+                "yes": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp db drop",
+            "endpoint": true,
+            "help": "Delete the database."
+        },
+        "export": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "file",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "tables": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp db export",
+            "endpoint": true,
+            "help": "Exports the database to a file or to STDOUT."
+        },
+        "import": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "file",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp db import",
+            "endpoint": true,
+            "help": "Import database from a file or from STDIN."
+        },
+        "optimize": {
+            "args": [],
+            "options": {},
+            "use": "wp db optimize",
+            "endpoint": true,
+            "help": "Optimize the database."
+        },
+        "query": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "sql",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp db query",
+            "endpoint": true,
+            "help": "Execute a query against the database."
+        },
+        "repair": {
+            "args": [],
+            "options": {},
+            "use": "wp db repair",
+            "endpoint": true,
+            "help": "Repair the database."
+        },
+        "reset": {
+            "args": [],
+            "options": {
+                "yes": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp db reset",
+            "endpoint": true,
+            "help": "Remove all tables from the database."
+        },
+        "tables": {
+            "args": [],
+            "options": {
+                "scope": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp db tables",
+            "endpoint": true,
+            "help": "List the database tables."
+        },
+        "help": "Perform basic database operations."
+    },
+    "eval": {
+        "args": [
+            {
+                "required": true,
+                "arg": "php-code",
+                "type": "args"
+            }
+        ],
+        "options": {},
+        "use": "wp eval",
+        "endpoint": true,
+        "help": "Execute arbitrary PHP code after loading WordPress."
+    },
+    "eval_file": {
+        "args": [
+            {
+                "required": true,
+                "arg": "file",
+                "type": "args"
+            },
+            {
+                "required": false,
+                "arg": "arg",
+                "type": "args"
+            }
+        ],
+        "options": {},
+        "use": "wp eval-file",
+        "endpoint": true,
+        "help": "Load and execute a PHP file after loading WordPress."
+    },
+    "export": {
+        "args": [],
+        "options": {
+            "dir": {
+                "required": false,
+                "type": "param"
+            },
+            "skip_comments": {
+                "required": false,
+                "type": "flag"
+            },
+            "max_file_size": {
+                "required": false,
+                "type": "param"
+            },
+            "start_date": {
+                "required": false,
+                "type": "param"
+            },
+            "end_date": {
+                "required": false,
+                "type": "param"
+            },
+            "post_type": {
+                "required": false,
+                "type": "param"
+            },
+            "post__in": {
+                "required": false,
+                "type": "param"
+            },
+            "author": {
+                "required": false,
+                "type": "param"
+            },
+            "category": {
+                "required": false,
+                "type": "param"
+            },
+            "post_status": {
+                "required": false,
+                "type": "param"
+            }
+        },
+        "use": "wp export",
+        "endpoint": true,
+        "help": "Export content to a WXR file."
+    },
+    "help": "Manage WordPress through the command-line.",
+    "import": {
+        "args": [
+            {
+                "required": true,
+                "arg": "file",
+                "type": "args"
+            }
+        ],
+        "options": {
+            "authors": {
+                "required": true,
+                "type": "param"
+            },
+            "skip": {
+                "required": false,
+                "type": "param"
+            }
+        },
+        "use": "wp import",
+        "endpoint": true,
+        "help": "Import content from a WXR file."
+    },
+    "media": {
+        "args": [],
+        "options": {},
+        "use": "wp media",
+        "import": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "file",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "post_id": {
+                    "required": false,
+                    "type": "param"
+                },
+                "title": {
+                    "required": false,
+                    "type": "param"
+                },
+                "caption": {
+                    "required": false,
+                    "type": "param"
+                },
+                "alt": {
+                    "required": false,
+                    "type": "param"
+                },
+                "desc": {
+                    "required": false,
+                    "type": "param"
+                },
+                "featured_image": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp media import",
+            "endpoint": true,
+            "help": "Create attachments from local files or from URLs."
+        },
+        "regenerate": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "attachment-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "yes": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp media regenerate",
+            "endpoint": true,
+            "help": "Regenerate thumbnail(s)."
+        },
+        "help": "Manage attachments."
+    },
+    "menu": {
+        "args": [],
+        "options": {},
+        "use": "wp menu",
+        "create": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "menu-name",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "porcelain": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp menu create",
+            "endpoint": true,
+            "help": "Create a new menu"
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "menu",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp menu delete",
+            "endpoint": true,
+            "help": "Delete one or more menus"
+        },
+        "item": {
+            "args": [],
+            "options": {},
+            "use": "wp menu item",
+            "add_custom": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "menu",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "title",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "link",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "description": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "attr-title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "target": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "classes": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "position": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "parent-id": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "porcelain": {
+                        "required": false,
+                        "type": "flag"
+                    }
+                },
+                "use": "wp menu item add-custom",
+                "endpoint": true,
+                "help": "Add a custom menu item"
+            },
+            "add_post": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "menu",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "post-id",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "link": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "description": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "attr-title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "target": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "classes": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "position": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "parent-id": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "porcelain": {
+                        "required": false,
+                        "type": "flag"
+                    }
+                },
+                "use": "wp menu item add-post",
+                "endpoint": true,
+                "help": "Add a post as a menu item"
+            },
+            "add_term": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "menu",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "taxonomy",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "term-id",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "link": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "description": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "attr-title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "target": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "classes": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "position": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "parent-id": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "porcelain": {
+                        "required": false,
+                        "type": "flag"
+                    }
+                },
+                "use": "wp menu item add-term",
+                "endpoint": true,
+                "help": "Add a taxonomy term as a menu item"
+            },
+            "delete": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "db-id",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp menu item delete",
+                "endpoint": true,
+                "help": "Delete one or more items from a menu"
+            },
+            "list": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "menu",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "fields": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp menu item list",
+                "endpoint": true,
+                "help": "Get a list of items associated with a menu"
+            },
+            "update": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "db-id",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "link": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "description": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "attr-title": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "target": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "classes": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "position": {
+                        "required": false,
+                        "type": "param"
+                    },
+                    "parent-id": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp menu item update",
+                "endpoint": true,
+                "help": "Update a menu item"
+            },
+            "help": "List, add, and delete items associated with a menu"
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp menu list",
+            "endpoint": true,
+            "help": "Get a list of menus."
+        },
+        "location": {
+            "args": [],
+            "options": {},
+            "use": "wp menu location",
+            "assign": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "menu",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "location",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp menu location assign",
+                "endpoint": true,
+                "help": "Assign a location to a menu"
+            },
+            "list": {
+                "args": [],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp menu location list",
+                "endpoint": true,
+                "help": "List locations for the current theme."
+            },
+            "remove": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "menu",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "location",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp menu location remove",
+                "endpoint": true,
+                "help": "Remove a location from a menu"
+            },
+            "help": "Manage a menu's assignment to locations."
+        },
+        "help": "List, create, assign, and delete menus"
+    },
+    "network": {
+        "args": [],
+        "options": {},
+        "use": "wp network",
+        "meta": {
+            "args": [],
+            "options": {},
+            "use": "wp network meta",
+            "add": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": false,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp network meta add",
+                "endpoint": true,
+                "help": "Add a meta field."
+            },
+            "delete": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp network meta delete",
+                "endpoint": true,
+                "help": "Delete a meta field."
+            },
+            "get": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp network meta get",
+                "endpoint": true,
+                "help": "Get meta field value."
+            },
+            "update": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": false,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp network meta update",
+                "endpoint": true,
+                "help": "Update a meta field."
+            },
+            "help": "Manage network custom fields."
+        },
+        "help": ""
+    },
+    "option": {
+        "args": [],
+        "options": {},
+        "use": "wp option",
+        "add": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "value",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "format": {
+                    "required": false,
+                    "type": "param"
+                },
+                "autoload": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp option add",
+            "endpoint": true,
+            "help": "Add an option."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp option delete",
+            "endpoint": true,
+            "help": "Delete an option."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp option get",
+            "endpoint": true,
+            "help": "Get an option."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "value",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp option update",
+            "endpoint": true,
+            "help": "Update an option."
+        },
+        "help": "Manage options."
+    },
+    "plugin": {
+        "args": [],
+        "options": {},
+        "use": "wp plugin",
+        "activate": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin activate",
+            "endpoint": true,
+            "help": "Activate a plugin."
+        },
+        "deactivate": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "all": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin deactivate",
+            "endpoint": true,
+            "help": "Deactivate a plugin."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp plugin delete",
+            "endpoint": true,
+            "help": "Delete plugin files."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp plugin get",
+            "endpoint": true,
+            "help": "Get a plugin."
+        },
+        "install": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin|zip|url",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "version": {
+                    "required": false,
+                    "type": "param"
+                },
+                "force": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "activate": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "activate-network": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin install",
+            "endpoint": true,
+            "help": "Install a plugin."
+        },
+        "is_installed": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp plugin is-installed",
+            "endpoint": true,
+            "help": "Check if the plugin is installed."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp plugin list",
+            "endpoint": true,
+            "help": "Get a list of plugins."
+        },
+        "path": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "dir": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin path",
+            "endpoint": true,
+            "help": "Get the path to a plugin or to the plugin directory."
+        },
+        "search": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "search",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "per-page": {
+                    "required": false,
+                    "type": "param"
+                },
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp plugin search",
+            "endpoint": true,
+            "help": "Search the wordpress.org plugin repository."
+        },
+        "status": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp plugin status",
+            "endpoint": true,
+            "help": "See the status of one or all plugins."
+        },
+        "toggle": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin toggle",
+            "endpoint": true,
+            "help": "Toggle a plugin's activation state."
+        },
+        "uninstall": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "no-delete": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin uninstall",
+            "endpoint": true,
+            "help": "Uninstall a plugin."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "all": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "version": {
+                    "required": false,
+                    "type": "param"
+                },
+                "dry-run": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp plugin update",
+            "endpoint": true,
+            "help": "Update one or more plugins."
+        },
+        "help": "Manage plugins."
+    },
+    "post": {
+        "args": [],
+        "options": {},
+        "use": "wp post",
+        "create": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "file",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "edit": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "porcelain": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp post create",
+            "endpoint": true,
+            "help": "Create a post."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "force": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp post delete",
+            "endpoint": true,
+            "help": "Delete a post by ID."
+        },
+        "edit": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {},
+            "use": "wp post edit",
+            "endpoint": true,
+            "help": "Launch system editor to edit post content."
+        },
+        "generate": {
+            "args": [],
+            "options": {
+                "count": {
+                    "required": false,
+                    "type": "param"
+                },
+                "post_type": {
+                    "required": false,
+                    "type": "param"
+                },
+                "post_status": {
+                    "required": false,
+                    "type": "param"
+                },
+                "post_author": {
+                    "required": false,
+                    "type": "param"
+                },
+                "post_date": {
+                    "required": false,
+                    "type": "param"
+                },
+                "post_content": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "max_depth": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp post generate",
+            "endpoint": true,
+            "help": "Generate some posts."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "arg"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp post get",
+            "endpoint": true,
+            "help": "Get a post's content by ID."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp post list",
+            "endpoint": true,
+            "help": "Get a list of posts."
+        },
+        "meta": {
+            "args": [],
+            "options": {},
+            "use": "wp post meta",
+            "add": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": false,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp post meta add",
+                "endpoint": true,
+                "help": "Add a meta field."
+            },
+            "delete": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp post meta delete",
+                "endpoint": true,
+                "help": "Delete a meta field."
+            },
+            "get": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp post meta get",
+                "endpoint": true,
+                "help": "Get meta field value."
+            },
+            "update": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "id",
+                        "type": "arg"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": false,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp post meta update",
+                "endpoint": true,
+                "help": "Update a meta field."
+            },
+            "help": "Manage post custom fields."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": true,
+                    "type": "param"
+                }
+            },
+            "use": "wp post update",
+            "endpoint": true,
+            "help": "Update one or more posts."
+        },
+        "url": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp post url",
+            "endpoint": true,
+            "help": "Get post url"
+        },
+        "help": "Manage posts."
+    },
+    "rewrite": {
+        "args": [],
+        "options": {},
+        "use": "wp rewrite",
+        "flush": {
+            "args": [],
+            "options": {
+                "hard": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp rewrite flush",
+            "endpoint": true,
+            "help": "Flush rewrite rules."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "match": {
+                    "required": false,
+                    "type": "param"
+                },
+                "source": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp rewrite list",
+            "endpoint": true,
+            "help": "Print current rewrite rules."
+        },
+        "structure": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "permastruct",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "category-base": {
+                    "required": false,
+                    "type": "param"
+                },
+                "tag-base": {
+                    "required": false,
+                    "type": "param"
+                },
+                "hard": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp rewrite structure",
+            "endpoint": true,
+            "help": "Update the permalink structure."
+        },
+        "help": "Manage rewrite rules."
+    },
+    "role": {
+        "args": [],
+        "options": {},
+        "use": "wp role",
+        "create": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "role-key",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "role-name",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp role create",
+            "endpoint": true,
+            "help": "Create a new role."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "role-key",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp role delete",
+            "endpoint": true,
+            "help": "Delete an existing role."
+        },
+        "exists": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "role-key",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp role exists",
+            "endpoint": true,
+            "help": "Check if a role exists."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp role list",
+            "endpoint": true,
+            "help": "List all roles."
+        },
+        "reset": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "role-key",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "all": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp role reset",
+            "endpoint": true,
+            "help": "Reset any default role to default capabilities."
+        },
+        "help": "Manage user roles."
+    },
+    "scaffold": {
+        "args": [],
+        "options": {},
+        "use": "wp scaffold",
+        "_s": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "slug",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "activate": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "theme_name": {
+                    "required": false,
+                    "type": "param"
+                },
+                "author": {
+                    "required": false,
+                    "type": "param"
+                },
+                "author_uri": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp scaffold _s",
+            "endpoint": true,
+            "help": "Generate starter code for a theme."
+        },
+        "child_theme": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "slug",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "parent_theme": {
+                    "required": true,
+                    "type": "param"
+                },
+                "theme_name": {
+                    "required": false,
+                    "type": "param"
+                },
+                "author": {
+                    "required": false,
+                    "type": "param"
+                },
+                "author_uri": {
+                    "required": false,
+                    "type": "param"
+                },
+                "theme_uri": {
+                    "required": false,
+                    "type": "param"
+                },
+                "activate": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp scaffold child-theme",
+            "endpoint": true,
+            "help": "Generate empty child theme."
+        },
+        "plugin": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "slug",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "plugin_name": {
+                    "required": false,
+                    "type": "param"
+                },
+                "skip-tests": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "activate": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp scaffold plugin",
+            "endpoint": true,
+            "help": "Generate starter code for a plugin."
+        },
+        "plugin_tests": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "plugin",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp scaffold plugin-tests",
+            "endpoint": true,
+            "help": "Generate files needed for running PHPUnit tests."
+        },
+        "post_type": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "slug",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "label": {
+                    "required": false,
+                    "type": "param"
+                },
+                "textdomain": {
+                    "required": false,
+                    "type": "param"
+                },
+                "theme": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "plugin": {
+                    "required": false,
+                    "type": "param"
+                },
+                "raw": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp scaffold post-type",
+            "endpoint": true,
+            "help": "Generate PHP code for registering a custom post type."
+        },
+        "taxonomy": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "slug",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "post_types": {
+                    "required": false,
+                    "type": "param"
+                },
+                "label": {
+                    "required": false,
+                    "type": "param"
+                },
+                "textdomain": {
+                    "required": false,
+                    "type": "param"
+                },
+                "theme": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "plugin": {
+                    "required": false,
+                    "type": "param"
+                },
+                "raw": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp scaffold taxonomy",
+            "endpoint": true,
+            "help": "Generate PHP code for registering a custom taxonomy."
+        },
+        "help": "Generate code for post types, taxonomies, etc."
+    },
+    "search_replace": {
+        "args": [
+            {
+                "required": true,
+                "arg": "old",
+                "type": "args"
+            },
+            {
+                "required": true,
+                "arg": "new",
+                "type": "args"
+            },
+            {
+                "required": false,
+                "arg": "table",
+                "type": "args"
+            }
+        ],
+        "options": {
+            "network": {
+                "required": false,
+                "type": "flag"
+            },
+            "skip-columns": {
+                "required": false,
+                "type": "param"
+            },
+            "dry-run": {
+                "required": false,
+                "type": "flag"
+            },
+            "recurse-objects": {
+                "required": false,
+                "type": "flag"
+            }
+        },
+        "use": "wp search-replace",
+        "endpoint": true,
+        "help": "Search/replace strings in the database."
+    },
+    "shell": {
+        "args": [],
+        "options": {
+            "basic": {
+                "required": false,
+                "type": "flag"
+            }
+        },
+        "use": "wp shell",
+        "endpoint": true,
+        "help": "Interactive PHP console."
+    },
+    "sidebar": {
+        "args": [],
+        "options": {},
+        "use": "wp sidebar",
+        "list": {
+            "args": [],
+            "options": {
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp sidebar list",
+            "endpoint": true,
+            "help": "List registered sidebars."
+        },
+        "help": "Manage sidebars."
+    },
+    "site": {
+        "args": [],
+        "options": {},
+        "use": "wp site",
+        "create": {
+            "args": [],
+            "options": {
+                "slug": {
+                    "required": true,
+                    "type": "param"
+                },
+                "title": {
+                    "required": false,
+                    "type": "param"
+                },
+                "email": {
+                    "required": false,
+                    "type": "param"
+                },
+                "network_id": {
+                    "required": false,
+                    "type": "param"
+                },
+                "private": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "porcelain": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp site create",
+            "endpoint": true,
+            "help": "Create a site in a multisite install."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "site-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "slug": {
+                    "required": false,
+                    "type": "param"
+                },
+                "yes": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "keep-tables": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp site delete",
+            "endpoint": true,
+            "help": "Delete a site in a multisite install."
+        },
+        "empty": {
+            "args": [],
+            "options": {
+                "yes": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp site empty",
+            "endpoint": true,
+            "help": "Empty a site of its content (posts, comments, and terms)."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "param"
+                },
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp site list",
+            "endpoint": true,
+            "help": "List all sites in a multisite install."
+        },
+        "url": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp site url",
+            "endpoint": true,
+            "help": "Get site url"
+        },
+        "help": "Perform site-wide operations."
+    },
+    "super_admin": {
+        "args": [],
+        "options": {},
+        "use": "wp super-admin",
+        "add": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp super-admin add",
+            "endpoint": true,
+            "help": "Grant super-admin privileges to one or more users."
+        },
+        "list": {
+            "args": [],
+            "options": {},
+            "use": "wp super-admin list",
+            "endpoint": true,
+            "help": "Show a list of users with super-admin capabilities."
+        },
+        "remove": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp super-admin remove",
+            "endpoint": true,
+            "help": "Revoke super-admin privileges to one or more users."
+        },
+        "help": "List, add, and remove super admins from a network."
+    },
+    "term": {
+        "args": [],
+        "options": {},
+        "use": "wp term",
+        "create": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "term",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "slug": {
+                    "required": false,
+                    "type": "param"
+                },
+                "description": {
+                    "required": false,
+                    "type": "param"
+                },
+                "parent": {
+                    "required": false,
+                    "type": "param"
+                },
+                "porcelain": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp term create",
+            "endpoint": true,
+            "help": "Create a term."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "term-id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp term delete",
+            "endpoint": true,
+            "help": "Delete a term."
+        },
+        "generate": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "count": {
+                    "required": false,
+                    "type": "param"
+                },
+                "max_depth": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp term generate",
+            "endpoint": true,
+            "help": "Generate some terms."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "term-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp term get",
+            "endpoint": true,
+            "help": "Get a taxonomy term"
+        },
+        "list": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp term list",
+            "endpoint": true,
+            "help": "List terms in a taxonomy."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "term-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "name": {
+                    "required": false,
+                    "type": "param"
+                },
+                "slug": {
+                    "required": false,
+                    "type": "param"
+                },
+                "description": {
+                    "required": false,
+                    "type": "param"
+                },
+                "parent": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp term update",
+            "endpoint": true,
+            "help": "Update a term."
+        },
+        "url": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "taxonomy",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "term-id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp term url",
+            "endpoint": true,
+            "help": "Get term url"
+        },
+        "help": "Manage terms."
+    },
+    "theme": {
+        "args": [],
+        "options": {},
+        "use": "wp theme",
+        "activate": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp theme activate",
+            "endpoint": true,
+            "help": "Activate a theme."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp theme delete",
+            "endpoint": true,
+            "help": "Delete a theme."
+        },
+        "disable": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp theme disable",
+            "endpoint": true,
+            "help": "Disable a theme in a multisite install."
+        },
+        "enable": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "activate": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp theme enable",
+            "endpoint": true,
+            "help": "Enable a theme in a multisite install."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp theme get",
+            "endpoint": true,
+            "help": "Get a theme"
+        },
+        "install": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme|zip|url",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "version": {
+                    "required": false,
+                    "type": "param"
+                },
+                "force": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "activate": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp theme install",
+            "endpoint": true,
+            "help": "Install a theme."
+        },
+        "is_installed": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp theme is-installed",
+            "endpoint": true,
+            "help": "Check if the theme is installed."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp theme list",
+            "endpoint": true,
+            "help": "Get a list of themes."
+        },
+        "mod": {
+            "args": [],
+            "options": {},
+            "use": "wp theme mod",
+            "get": {
+                "args": [
+                    {
+                        "required": false,
+                        "arg": "mod",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "all": {
+                        "required": false,
+                        "type": "flag"
+                    },
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp theme mod get",
+                "endpoint": true,
+                "help": "Get theme mod(s)."
+            },
+            "remove": {
+                "args": [
+                    {
+                        "required": false,
+                        "arg": "mod",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "all": {
+                        "required": false,
+                        "type": "flag"
+                    }
+                },
+                "use": "wp theme mod remove",
+                "endpoint": true,
+                "help": "Remove theme mod(s)."
+            },
+            "set": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "mod",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp theme mod set",
+                "endpoint": true,
+                "help": "Set a theme mod."
+            },
+            "help": "Manage theme mods."
+        },
+        "path": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "dir": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp theme path",
+            "endpoint": true,
+            "help": "Get the path to a theme or to the theme directory."
+        },
+        "search": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "search",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "per-page": {
+                    "required": false,
+                    "type": "param"
+                },
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp theme search",
+            "endpoint": true,
+            "help": "Search the wordpress.org theme repository."
+        },
+        "status": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp theme status",
+            "endpoint": true,
+            "help": "See the status of one or all themes."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": false,
+                    "arg": "theme",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "all": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "version": {
+                    "required": false,
+                    "type": "param"
+                },
+                "dry-run": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp theme update",
+            "endpoint": true,
+            "help": "Update one or more themes."
+        },
+        "help": "Manage themes."
+    },
+    "transient": {
+        "args": [],
+        "options": {},
+        "use": "wp transient",
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp transient delete",
+            "endpoint": true,
+            "help": "Delete a transient value."
+        },
+        "delete_all": {
+            "args": [],
+            "options": {},
+            "use": "wp transient delete-all",
+            "endpoint": true,
+            "help": "Delete all transients."
+        },
+        "delete_expired": {
+            "args": [],
+            "options": {},
+            "use": "wp transient delete-expired",
+            "endpoint": true,
+            "help": "Delete all expired transients."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "json": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp transient get",
+            "endpoint": true,
+            "help": "Get a transient value."
+        },
+        "set": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "key",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "value",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "expiration",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp transient set",
+            "endpoint": true,
+            "help": "Set a transient value. <expiration> is the time until expiration, in seconds."
+        },
+        "type": {
+            "args": [],
+            "options": {},
+            "use": "wp transient type",
+            "endpoint": true,
+            "help": "See whether the transients API is using an object cache or the options table."
+        },
+        "help": "Manage transients."
+    },
+    "user": {
+        "args": [],
+        "options": {},
+        "use": "wp user",
+        "add_cap": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "cap",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp user add-cap",
+            "endpoint": true,
+            "help": "Add a capability for a user."
+        },
+        "add_role": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "role",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp user add-role",
+            "endpoint": true,
+            "help": "Add a role for a user."
+        },
+        "create": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user-login",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "user-email",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "role": {
+                    "required": false,
+                    "type": "param"
+                },
+                "user_pass": {
+                    "required": false,
+                    "type": "param"
+                },
+                "user_registered": {
+                    "required": false,
+                    "type": "param"
+                },
+                "display_name": {
+                    "required": false,
+                    "type": "param"
+                },
+                "send-email": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "porcelain": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp user create",
+            "endpoint": true,
+            "help": "Create a user."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "network": {
+                    "required": false,
+                    "type": "flag"
+                },
+                "reassign": {
+                    "required": false,
+                    "type": "param"
+                },
+                "yes": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp user delete",
+            "endpoint": true,
+            "help": "Delete one or more users from the current site."
+        },
+        "generate": {
+            "args": [],
+            "options": {
+                "count": {
+                    "required": false,
+                    "type": "param"
+                },
+                "role": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp user generate",
+            "endpoint": true,
+            "help": "Generate users."
+        },
+        "get": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp user get",
+            "endpoint": true,
+            "help": "Get a single user."
+        },
+        "import_csv": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "file",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "send-email": {
+                    "required": false,
+                    "type": "flag"
+                }
+            },
+            "use": "wp user import-csv",
+            "endpoint": true,
+            "help": "Import users from a CSV file."
+        },
+        "list": {
+            "args": [],
+            "options": {
+                "role": {
+                    "required": false,
+                    "type": "param"
+                },
+                "field": {
+                    "required": false,
+                    "type": "param"
+                },
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp user list",
+            "endpoint": true,
+            "help": "List users."
+        },
+        "list_caps": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp user list-caps",
+            "endpoint": true,
+            "help": "List all user's capabilities."
+        },
+        "meta": {
+            "args": [],
+            "options": {},
+            "use": "wp user meta",
+            "add": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "user",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp user meta add",
+                "endpoint": true,
+                "help": "Add a meta field."
+            },
+            "delete": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "user",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {},
+                "use": "wp user meta delete",
+                "endpoint": true,
+                "help": "Delete a meta field."
+            },
+            "get": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "user",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp user meta get",
+                "endpoint": true,
+                "help": "Get meta field value."
+            },
+            "update": {
+                "args": [
+                    {
+                        "required": true,
+                        "arg": "user",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "key",
+                        "type": "args"
+                    },
+                    {
+                        "required": true,
+                        "arg": "value",
+                        "type": "args"
+                    }
+                ],
+                "options": {
+                    "format": {
+                        "required": false,
+                        "type": "param"
+                    }
+                },
+                "use": "wp user meta update",
+                "endpoint": true,
+                "help": "Update a meta field."
+            },
+            "help": "Manage user custom fields."
+        },
+        "remove_cap": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "cap",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp user remove-cap",
+            "endpoint": true,
+            "help": "Remove a user's capability."
+        },
+        "remove_role": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "role",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp user remove-role",
+            "endpoint": true,
+            "help": "Remove a user's role."
+        },
+        "set_role": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "role",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp user set-role",
+            "endpoint": true,
+            "help": "Set the user role (for a particular blog)."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "user",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": true,
+                    "type": "param"
+                }
+            },
+            "use": "wp user update",
+            "endpoint": true,
+            "help": "Update a user."
+        },
+        "help": "Manage users."
+    },
+    "widget": {
+        "args": [],
+        "options": {},
+        "use": "wp widget",
+        "add": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "name",
+                    "type": "args"
+                },
+                {
+                    "required": true,
+                    "arg": "sidebar-id",
+                    "type": "args"
+                },
+                {
+                    "required": false,
+                    "arg": "position",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp widget add",
+            "endpoint": true,
+            "help": "Add a widget to a sidebar."
+        },
+        "deactivate": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "widget-id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp widget deactivate",
+            "endpoint": true,
+            "help": "Deactivate one or more widgets from an active sidebar."
+        },
+        "delete": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "widget-id",
+                    "type": "args"
+                }
+            ],
+            "options": {},
+            "use": "wp widget delete",
+            "endpoint": true,
+            "help": "Delete one or more widgets from a sidebar."
+        },
+        "list": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "sidebar-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "fields": {
+                    "required": false,
+                    "type": "param"
+                },
+                "format": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp widget list",
+            "endpoint": true,
+            "help": "List widgets associated with a sidebar."
+        },
+        "move": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "widget-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "position": {
+                    "required": false,
+                    "type": "param"
+                },
+                "sidebar-id": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp widget move",
+            "endpoint": true,
+            "help": "Move a widget from one position on a sidebar to another."
+        },
+        "update": {
+            "args": [
+                {
+                    "required": true,
+                    "arg": "widget-id",
+                    "type": "args"
+                }
+            ],
+            "options": {
+                "field": {
+                    "required": false,
+                    "type": "param"
+                }
+            },
+            "use": "wp widget update",
+            "endpoint": true,
+            "help": "Update a given widget's options."
+        },
+        "help": "Manage sidebar widgets."
+    }
+}
