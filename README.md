@@ -79,7 +79,7 @@ Type: `Function`
 Callback that is passed a WP instance. This instance has config options bound to it if you want to manage more than one wordpress install at a time.  
 
 
-### WP.<command...>
+### WP.\<command...\>
 
 The wordpress cli options are pulled from [http://wp-cli.org/commands/cli/cmd-dump/](http://wp-cli.org/commands/cli/cmd-dump/). 
 
