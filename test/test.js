@@ -1,10 +1,9 @@
 var WP = require("../index");
 
-WP.load(function(WP){
-	
-	WP.cli.info(function(err,info){
-	
-	});	
+WP.load({path:"/Users/matthew.drake/dev/wp-test"},function(WP){	
 		
+	WP.scaffold.plugin("my-plugin",{plugin_name:"Hello Node WP"},function(err,result){ // creates a new plugin
+		console.log(result);
+	});	
 	
 });
