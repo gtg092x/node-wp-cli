@@ -4,7 +4,7 @@
   "description": "Node Wrapper for Wordpress CLI",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    
   },
   "repository": {
     "type": "git",
