@@ -19,8 +19,8 @@ $ npm install --save wp-cli
 
 ```js
 var WP = require('wp-cli');
-WP.load(function(WP){	
-	WP.cli.info({path:'/path/to/install'},function(err,info){
+WP.load({path:'/path/to/install'},function(WP){	
+	WP.cli.info(function(err,info){ //get CLI info
 		console.log(info);
 	});		
 	WP.comment.list(function(err,comments){ //list comments
