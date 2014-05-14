@@ -1,4 +1,4 @@
-# [wp-cli](http://wp-cli.org/) [![Build Status](https://travis-ci.org/gtg092x/.svg?branch=master)](https://travis-ci.org/gtg092x/gulp-sftp)
+# [wp-cli](http://wp-cli.org/) [![Build Status](https://travis-ci.org/gtg092x/wp-cli.svg?branch=master)](https://travis-ci.org/gtg092x/wp-cli)
 
 > Node Wrapper for Wordpress CLI
 
