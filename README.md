@@ -104,7 +104,7 @@ WP.load(function(WP){
 
 Refer to [http://wp-cli.org/commands/](http://wp-cli.org/commands/) for a detailed list of commands and options.
 
-Most commands work with the exception of commands that are interactive prompts. These commands will be supported in future releases using spawn streams.
+Most commands work with the exception of commands that are interactive prompts or commands that utilize stdin streams. These commands will be supported in future releases using spawn objects.
 
 ## License
 
