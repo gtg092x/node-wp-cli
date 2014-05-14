@@ -54,7 +54,7 @@ The wordpress install location.
 Type: `String`  
 Default: `null`
 
-Note this is for spoofing a URL, this is not for remote management. If you're interested in remote management, I suggest you push the feature requrest with the authors of [http://wp-cli.org/config/](http://wp-cli.org/config/).
+Note this is for spoofing a URL, this is not for remote management. If you're interested in remote management, I suggest you push the feature request with the authors of [http://wp-cli.org/](http://wp-cli.org/).
 
 #### options.user
 
