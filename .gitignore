@@ -26,3 +26,4 @@ node_modules
 .project
 cache
 test/test.js
+test
