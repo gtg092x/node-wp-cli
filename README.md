@@ -19,7 +19,7 @@ $ npm install --save wp-cli
 
 ```js
 var WP = require('wp-cli');
-WP.load({path:'/path/to/install'},function(WP){	
+WP.discover({path:'/path/to/install'},function(WP){
 	WP.cli.info(function(err,info){ //get CLI info
 		console.log(info);
 	});		
@@ -38,7 +38,7 @@ WP.load({path:'/path/to/install'},function(WP){
 
 ## API
 
-### WP.load(options,callback)
+### WP.discover(options,callback) *Alias: `WP.load`*
 
 Options mirror WP-CLI configuration. Refer to [http://wp-cli.org/config/](http://wp-cli.org/config/) for more information.
 
