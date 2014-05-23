@@ -96,7 +96,7 @@ Where arguments is an optional argument or array of arguments and options is an 
 
 ```js
 var WP = require('wp-cli');
-WP.load(function(WP){	
+WP.discover(function(WP){
 	WP.scaffold.plugin("my-plugin",{plugin_name:"Hello Node WP"},function(err,result){ // creates a new plugin
 		console.log(result);
 	});	
