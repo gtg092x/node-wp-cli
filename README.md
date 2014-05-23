@@ -38,7 +38,8 @@ WP.discover({path:'/path/to/install'},function(WP){
 
 ## API
 
-### WP.discover(options,callback) *Alias: `WP.load`*
+### WP.discover(options,callback)
+*Alias: `WP.load`*
 
 Options mirror WP-CLI configuration. Refer to [http://wp-cli.org/config/](http://wp-cli.org/config/) for more information.
 
