@@ -28,3 +28,4 @@ node_modules
 cache
 test/test.js
 test
+.DS_Store
