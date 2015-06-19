@@ -1,6 +1,6 @@
 {
   "name": "wp-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Node Wrapper for Wordpress CLI",
   "main": "index.js",
   "scripts": {
