@@ -3,9 +3,7 @@
   "version": "0.0.5",
   "description": "Node Wrapper for Wordpress CLI",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/gtg092x/node-wp-cli.git"
@@ -27,7 +25,8 @@
     "lodash": "^2.4.1"
   },
   "dependencies": {
-	"async": "^0.8.0",
+    "async": "^0.8.0",
+    "escapeshellarg": "^0.1.0",
     "lodash": "^2.4.1"
   }
 }
